@@ -10,7 +10,8 @@ class MaxSizeList(object):
     def push(self,val):        
         self.val.append(val)
     def get_list(self):                
-        return self.val[0:self.max_ele]
+        #return self.val[0:self.max_ele]
+        return self.val[-self.max_ele:]
 
 
 a=MaxSizeList(3)
